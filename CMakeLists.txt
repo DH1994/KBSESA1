@@ -16,7 +16,7 @@ file(GLOB ${CMAKE_PROJECT_NAME}_HDRS
 
 # Configure upload target
 set(${CMAKE_PROJECT_NAME}_BOARD uno)
-set(${CMAKE_PROJECT_NAME}_PORT COM3) # Edit this
+set(${CMAKE_PROJECT_NAME}_PORT /dev/cu.usbmodem1411) # Edit this
 
 # Magic happens here!
 generate_arduino_firmware(${CMAKE_PROJECT_NAME})
